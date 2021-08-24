@@ -16,6 +16,17 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
 /* ------------------------------------------------------------------ */
 /*Reusable components*/
 /* ------------------------------------------------------------------ */
@@ -100,6 +111,10 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-text-box {
@@ -231,36 +246,92 @@ header {
 /* ------------------------------------------------------------------ */
 
 .section-meals {
-    padding: 0px;
+  padding: 0px;
 }
 
 .meals-showcase {
-    list-style: none;
-    width: 100%;
+  list-style: none;
+  width: 100%;
 }
 
 .meals-showcase li {
-    display: block;
-    float: left;
-    width: 25%;
+  display: block;
+  float: left;
+  width: 25%;
 }
 
 .meal-photo {
-    width: 100%;
-    margin: 0px;
-    overflow: hidden;
-    background-color: black;
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  background-color: black;
 }
 
 .meal-photo img {
-    opacity: 0.7;
-    width: 100%;
-    height: auto;
-    transform: scale(1.15);
-    transition: transform 0.3s, opacity 0.3s;
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.3s, opacity 0.3s;
 }
 
 .meal-photo img:hover {
-    transform: scale(1.03);
-    opacity: 1.00;
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+/* ------------------------------------------------------------------ */
+/*how it works*/
+/* ------------------------------------------------------------------ */
+
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  padding-left: 3%;
+  margin-top: 70px;
+}
+
+.app-screen {
+  width: 40%;
+}
+
+.works-steps {
+  margin-bottom: 70px;
+  padding-right: 30px;
+}
+
+.works-steps:last-of-type {
+  margin-bottom: 80px;
+}
+
+.works-steps div {
+  color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 50%;
+  display: inline;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  padding: 5px;
+  float: left;
+  font-size: 150%;
+  margin-right: 25px;
+}
+
+.works-steps p {
+    padding-top: 15px;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.section-steps {
+  background-color: #fafafa;
 }
