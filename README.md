@@ -1,2 +1,2 @@
 # omni-food
-![](resources/img/omni.jpg
+![](resources/img/omni.jpg)
