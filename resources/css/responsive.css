@@ -1,0 +1,36 @@
+
+/*medium fuckin screens fella*/
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2% 0 2%;
+      }
+    
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/*medium fuckin screens fella*/
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+      }
+}
+
+/*medium fuckin screens fella*/
+@media only screen and (max-width: 767px) {
+
+}
+
+/*small fuckin screens fella*/
+@media only screen and (max-width: 480px) {
+
+}
